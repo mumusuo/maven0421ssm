@@ -1,5 +1,6 @@
 package org.hzl.controllter.developer;
 
+import org.apache.log4j.Logger;
 import org.hzl.pojo.AppCategory;
 import org.hzl.pojo.DataDictionary;
 import org.hzl.pojo.DevUser;
@@ -17,6 +18,7 @@ import java.util.List;
 @Controller
 @RequestMapping("/DevUser")
 public class DevControllter {
+    Logger log4j = Logger.getLogger(DevControllter.class);
     @Resource
     private DevUserService devUserService;
     @Resource
